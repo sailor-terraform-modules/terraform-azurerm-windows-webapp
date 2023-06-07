@@ -5,10 +5,10 @@ resource "azurerm_windows_web_app" "example" {
   service_plan_id     = var.service_plan_id
 
   site_config {
-    ftps_state = var.ftps_state
+    ftps_state       = var.ftps_state
     app_command_line = var.app_command_line
     application_stack {
-      current_stack = var.current_stack
+      current_stack  = var.current_stack
       dotnet_version = var.dotnet_version
 
     }
